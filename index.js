@@ -39,7 +39,14 @@ const ex = {
     ensureBoolean: (object, key) => {
         const value = ex.ensure(object, key);
         if (typeof value !== 'boolean') {
-            throw new Error(`Expected boolean'${key}'`);
+            throw new Error(`Expected boolean '${key}'`);
+        }
+        return value;
+    },
+    setBoolean: (object, key, value) => {
+        const oldValue = ex.get(object, key);
+        if (typeof value !== 'boolean') {
+            throw new Error(`Expected boolean value to set '${key}'`);
         }
         return value;
     },
@@ -49,7 +56,7 @@ const ex = {
     ensureFunction: (object, key) => {
         const value = ex.ensure(object, key);
         if (typeof value !== 'function') {
-            throw new Error(`Expected boolean'${key}'`);
+            throw new Error(`Expected function '${key}'`);
         }
     }
 }

@@ -1,0 +1,19 @@
+{
+  "name": "assertp",
+  "version": "0.1.0",
+  "description": "Assert on an object's property value.",
+  "main": "index.js",
+  "scripts": {},
+  "author": {
+    "url": "https://twitter.com/@evanxsummers"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanx/asserta.git"
+  },
+  "homepage": "https://github.com/evanx/asserta",
+  "dependencies": {
+    "app-bin": "^0.1.3"
+  }
+}

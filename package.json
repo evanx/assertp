@@ -1,6 +1,6 @@
 {
   "name": "objecta",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Assert on an object's property value.",
   "main": "index.js",
   "scripts": {},

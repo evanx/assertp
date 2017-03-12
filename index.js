@@ -48,6 +48,7 @@ const ex = {
         if (typeof value !== 'boolean') {
             throw new Error(`Expected boolean value to set '${key}'`);
         }
+        object[key] = value;
         return value;
     },
     hasFunction: (object, key) => {

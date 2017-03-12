@@ -1,6 +1,6 @@
 {
   "name": "assertp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Assert on an object's property value.",
   "main": "index.js",
   "scripts": {},
@@ -14,6 +14,5 @@
   },
   "homepage": "https://github.com/evanx/asserta",
   "dependencies": {
-    "app-bin": "^0.1.3"
   }
 }

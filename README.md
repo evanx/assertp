@@ -1,4 +1,4 @@
-# assertp
+# objecta
 
 Assert on an object's property.
 

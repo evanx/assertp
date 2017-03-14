@@ -16,7 +16,7 @@ const ex = {
         }
         return value;
     },
-    is: (object, key, expectedValue) => {
+    ensureExpectedValue: (object, key, expectedValue) => {
         if (ex.get(object, key) !== expectedValue) {
             throw new Error(`Expected value (${expectedValue}) for '${key}'`);
         }

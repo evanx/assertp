@@ -1,5 +1,5 @@
 
-const asserta = require('../index.js');
+const objecta = require('../index.js');
 
 const object = {
     f: () => true,
@@ -7,12 +7,13 @@ const object = {
     s: 'string'
 }
 
+objecta.is(object, 's', 'string');
+objecta.ensureFunction(object, 'f');
+
 const errors = [];
 
-asserta.ensureFunction(object, 'f');
-
 try {
-    asserta.ensureFunction(object, 's');
+    objecta.ensureFunction(object, 's');
     errors.push('s');
 } catch (err) {
 }

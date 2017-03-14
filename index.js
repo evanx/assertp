@@ -16,6 +16,11 @@ const ex = {
         }
         return value;
     },
+    is: (object, key, expectedValue) => {
+        if (ex.get(object, key) !== expectedValue) {
+            throw new Error(`Expected value (${expectedValue}) for '${key}'`);
+        }
+    },
     has: (object, key) => {
         const value = ex.get(object, key);
         if (value === undefined) {
